@@ -4,7 +4,7 @@
     "address": "3121 S Mall Dr, St George, UT 84790",
     "phone": "(435) 634-3000",
     "website": "https://www.youngliving.com",
-    "image": "young-living.jpg",
+    "image": "YLivinglogo.png",
     "membershipLevel": 3,
     "description": "Wellness and essential oils company."
   },
@@ -13,7 +13,7 @@
     "address": "1277 S Bluff St, St George, UT 84770",
     "phone": "(435) 674-5100",
     "website": "https://blackbeardiner.com",
-    "image": "black-bear-diner.jpg",
+    "image": "BBearlogo.png",
     "membershipLevel": 2,
     "description": "Classic American diner with homestyle meals."
   },
@@ -21,8 +21,8 @@
     "name": "Red Rock Brewery",
     "address": "147 E St George Blvd, St George, UT 84770",
     "phone": "(435) 627-0600",
-    "website": "https://redrockbrewery.com",
-    "image": "red-rock-brewery.jpg",
+    "website": "redrockbrewery.com",
+    "image": "RRocklogo.png",
     "membershipLevel": 3,
     "description": "Craft brewery and restaurant."
   },
@@ -31,7 +31,7 @@
     "address": "428 W St George Blvd, St George, UT 84770",
     "phone": "(435) 673-9896",
     "website": "http://georgescorner.com",
-    "image": "georges-corner.jpg",
+    "image": "GCornerlogo.jpg",
     "membershipLevel": 1,
     "description": "Casual dining and bar."
   },
@@ -40,7 +40,7 @@
     "address": "315 S 400 W, St George, UT 84770",
     "phone": "(435) 656-2430",
     "website": "https://mtcycles.com",
-    "image": "mt-cycles.jpg",
+    "image": "MTcyclelogo.png",
     "membershipLevel": 2,
     "description": "Motorcycle sales and service."
   },
@@ -49,7 +49,7 @@
     "address": "203 S Main St, St George, UT 84770",
     "phone": "(435) 628-7888",
     "website": "https://paintedpony.com",
-    "image": "painted-pony.jpg",
+    "image": "PPonylogo.jpg",
     "membershipLevel": 3,
     "description": "Upscale dining experience."
   },
@@ -58,7 +58,7 @@
     "address": "1100 Tuacahn Dr, Ivins, UT 84738",
     "phone": "(435) 652-3300",
     "website": "https://tuacahn.org",
-    "image": "tuacahn.jpg",
+    "image": "Tlogo.png",
     "membershipLevel": 3,
     "description": "Outdoor theater and arts center."
   }
