@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>My Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Thank You for Joining!</h2>
+    <p>We have received your application. Here is a summary of the information you submitted:</p>
+
+    <div id="summary" class="summary-box">
+      
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="copyright-year"></span> Tyler Andrew | WDD 231</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+  </footer>
+
+  <script>
+    // Footer
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+    document.getElementById("last-modified").textContent = document.lastModified;
+
+    // Show submitted form data
+    const params = new URLSearchParams(window.location.search);
+    const summaryDiv = document.getElementById("summary");
+
+    const entries = [
+      ["First Name", "firstName"],
+      ["Last Name", "lastName"],
+      ["Email", "email"],
+      ["Phone", "phone"],
+      ["Organization", "organization"],
+      ["Submitted At", "timestamp"]
+    ];
+
+    let content = "<ul>";
+    entries.forEach(([label, key]) => {
+      const value = params.get(key) || "Not provided";
+      content += `<li><strong>${label}:</strong> ${value}</li>`;
+    });
+    content += "</ul>";
+    summaryDiv.innerHTML = content;
+  </script>
+</body>
+</html>

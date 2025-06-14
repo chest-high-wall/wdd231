@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join the Chamber</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .membership-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: #f2f2f2;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 250px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s forwards;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.1s; }
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.3s; }
+    .card:nth-child(4) { animation-delay: 0.4s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 100;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    .modal-content {
+      background: white;
+      margin: 10% auto;
+      padding: 1rem;
+      border-radius: 5px;
+      width: 90%;
+      max-width: 500px;
+      position: relative;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px; right: 15px;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    form {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    label {
+      display: block;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Chamber Membership Application</h2>
+
+    <form method="get" action="thankyou.html">
+      <label>
+        First Name:
+        <input type="text" name="firstName" title="First Name" required autocomplete="given-name" />
+      </label>
+
+      <label>
+        Last Name:
+        <input type="text" name="lastName" title="Last Name" required autocomplete="family-name" />
+      </label>
+
+      <label>
+        Organization Title:
+        <input type="text" name="orgTitle" title="Your Title in the Organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@domain.com" />
+      </label>
+
+      <label>
+        Mobile Phone:
+        <input type="tel" name="phone" title="Mobile Phone Number" required autocomplete="tel" />
+      </label>
+
+      <label>
+        Business/Organization Name:
+        <input type="text" name="organization" title="Business or Organization Name" required autocomplete="organization" />
+      </label>
+
+      <label>
+        Membership Level:
+        <select name="membership" title="Select Membership Level" required>
+          <option value="">--Please choose one--</option>
+          <option value="np">NP Membership (Free for Nonprofits)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label>
+        Business Description:
+        <textarea name="description" title="Describe Your Business"></textarea>
+      </label>
+
+      <input type="hidden" name="timestamp" id="timestamp" />
+      <input type="submit" value="Apply Now" />
+    </form>
+
+    <section id="membership-cards" class="membership-cards">
+      <div class="card np-card">
+        <h3>NP Membership</h3>
+        <p>Free for non-profits</p>
+        <button type="button" onclick="openModal('npModal')">Benefits</button>
+      </div>
+      <div class="card bronze-card">
+        <h3>Bronze Membership</h3>
+        <p>Basic exposure</p>
+        <button type="button" onclick="openModal('bronzeModal')">Benefits</button>
+      </div>
+      <div class="card silver-card">
+        <h3>Silver Membership</h3>
+        <p>Extra exposure + event access</p>
+        <button type="button" onclick="openModal('silverModal')">Benefits</button>
+      </div>
+      <div class="card gold-card">
+        <h3>Gold Membership</h3>
+        <p>Top visibility + sponsorships</p>
+        <button type="button" onclick="openModal('goldModal')">Benefits</button>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="npModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('npModal')">&times;</span>
+        <h3>NP Membership Benefits</h3>
+        <ul>
+          <li>Free Directory Listing</li>
+          <li>Access to Monthly Networking</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="bronzeModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('bronzeModal')">&times;</span>
+        <h3>Bronze Membership Benefits</h3>
+        <ul>
+          <li>Business Card on Website</li>
+          <li>2 Free Event Passes</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="silverModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('silverModal')">&times;</span>
+        <h3>Silver Membership Benefits</h3>
+        <ul>
+          <li>Homepage Spotlight</li>
+          <li>Discount Booths at Events</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="goldModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('goldModal')">&times;</span>
+        <h3>Gold Membership Benefits</h3>
+        <ul>
+          <li>Everything in Silver +</li>
+          <li>Banner Ad on Homepage</li>
+          <li>Sponsorship Recognition</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="copyright-year"></span> Tyler Andrew | WDD 231</p>
+    <p>Last Modified: <span id="last-modified">06/14/2025 14:48:33</span></p>
+  </footer>
+
+  <script>
+    document.getElementById("timestamp").value = new Date().toISOString();
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+
+    function openModal(id) {
+      document.getElementById(id).style.display = "block";
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    };
+  </script>
+</body>
+</html>
+
