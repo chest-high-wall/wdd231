@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tyler Andrew's WDD 231 Course Homepage" />
+  <meta name="author" content="Tyler Andrew" />
+  <title>WDD 231 - Course Home Page</title>
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/larger.css" />
+  <script src="js/navigation.js" defer></script>
+  <script src="js/date.js" defer></script>
+  <script src="js/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/your-photo.jpg" alt="Tyler Andrew" loading="lazy" />
+    <span>Tyler Andrew</span>
+  </header>
+
+  <nav>
+    <button id="menu" aria-label="Menu"></button>
+    <ul class="navigation">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="chamber/">Chamber</a></li>
+      <li><a href="#">Final</a></li>
+      <li><a href="https://github.com/chest-high-wall" target="_blank">GitHub</a></li>
+      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section>
+      <h2>About Me</h2>
+      <p>This is my course homepage for WDD 231. I'm a student at BYU-Idaho studying web development and programming.</p>
+    </section>
+
+    <section>
+      <h2>Certificate: Web & Computer Programming</h2>
+      <div class="filters">
+        <button id="all">All Courses</button>
+        <button id="wdd">WDD Courses</button>
+        <button id="cse">CSE Courses</button>
+      </div>
+      <div id="courseCards">
+        
+      </div>
+      <p id="creditTotal"></p>
+    </section>
+
+    <section>
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+        <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Tyler Andrew | Utah, USA</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

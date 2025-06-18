@@ -1,0 +1,213 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+nav {
+  background-color: #004080;
+}
+
+#menu {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  flex-direction: column;
+}
+
+.navigation li a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation li a:hover,
+.navigation li a[aria-current="page"] {
+  background-color: #0066cc;
+}
+
+.navigation.show {
+  display: flex;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+
+/* Hide navigation by default on small screens */
+.navigation {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  padding: 1rem;
+}
+
+.navigation.open {
+  display: flex;
+}
+
+/* Hamburger styling */
+#menu {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: block;
+}
+
+#menu.open {
+  background-color: #555;
+}
+
+
+@media (min-width: 640px) {
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: transparent;
+  }
+}
+
+#courseCards {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.course-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.02);
+}
+
+.course-card.completed {
+  background-color: #d1ffd6;
+  border-color: #48c774;
+}
+
+#courseCards {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.course-card {
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  transition: transform 0.3s ease;
+}
+
+.course-card h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.course-card.completed {
+  background-color: #c8f7c5;
+  border-color: #4caf50;
+  font-weight: bold;
+}
+
+.course-card:hover {
+  transform: scale(1.02);
+}
+
+.filters {
+  margin-top: 1rem;
+}
+
+.filters button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* Hamburger button appearance (small screens) */
+#menu {
+  font-size: 2rem;          
+  color: #fff;              
+  background: none;         
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+
+#menu.open::after {
+  content: "✖";             
+}
+
+#menu::after {
+  content: "☰";             
+}
+
+@media (min-width: 640px) {
+  #menu { display: none; }   
+}
