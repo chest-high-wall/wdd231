@@ -7,16 +7,19 @@
   <meta name="author" content="Tyler Andrew" />
   <title>WDD 231 - Course Home Page</title>
 
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/small.css" />
-  <link rel="stylesheet" href="css/larger.css" />
-  <script src="js/navigation.js" defer></script>
-  <script src="js/date.js" defer></script>
-  <script src="js/course.js" defer></script>
+  <!-- CSS from chamber folder -->
+  <link rel="stylesheet" href="chamber/css/normalize.css">
+  <link rel="stylesheet" href="chamber/css/small.css">
+  <link rel="stylesheet" href="chamber/css/larger.css">
+
+  <!-- JS from chamber folder -->
+  <script src="chamber/js/navigation.js" defer></script>
+  <script src="chamber/js/date.js" defer></script>
+  <script src="chamber/js/course.js" defer></script>
 </head>
 <body>
   <header>
-    <img src="images/your-photo.jpg" alt="Tyler Andrew" loading="lazy" />
+    <img src="chamber/images/your-photo.jpg" alt="Tyler Andrew" loading="lazy" />
     <span>Tyler Andrew</span>
   </header>
 
@@ -47,7 +50,7 @@
         <button id="cse">CSE Courses</button>
       </div>
       <div id="courseCards">
-        
+        <!-- Cards will be injected here -->
       </div>
       <p id="creditTotal"></p>
     </section>

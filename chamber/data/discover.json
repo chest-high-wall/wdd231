@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Pioneer Park",
+    "image": "pioneerpark.webp",
+    "address": "Red Hills Pkwy, St. George, UT 84770",
+    "description": "A scenic city park with sandstone formations, hiking, and picnic areas."
+  },
+  {
+    "name": "St. George Temple",
+    "image": "stgeorgetemple.webp",
+    "address": "250 E 400 S, St. George, UT 84770",
+    "description": "A historic temple of The Church of Jesus Christ of Latter-day Saints, known for its striking white exterior."
+  },
+  {
+    "name": "Snow Canyon State Park",
+    "image": "snowcanyon.webp",
+    "address": "1002 Snow Canyon Dr, Ivins, UT 84738",
+    "description": "A state park with red rock canyons, lava tubes, and scenic trails."
+  },
+  {
+    "name": "Tuacahn Amphitheatre",
+    "image": "tuacahn.webp",
+    "address": "1100 Tuacahn Dr, Ivins, UT 84738",
+    "description": "An outdoor amphitheater set in red rock, hosting Broadway-style shows."
+  },
+  {
+    "name": "Red Hills Desert Garden",
+    "image": "desert-garden.webp",
+    "address": "375 E Red Hills Pkwy, St. George, UT 84770",
+    "description": "A free public garden showcasing desert plants and a stream with native fish."
+  },
+  {
+    "name": "Brigham Young Winter Home",
+    "image": "brighamyounghome.webp",
+    "address": "67 W 200 N, St. George, UT 84770",
+    "description": "Historic home of Brigham Young, open for tours and historical insights."
+  },
+  {
+    "name": "Dinosaur Discovery Site",
+    "image": "dino-site.webp",
+    "address": "2180 E Riverside Dr, St. George, UT 84790",
+    "description": "Museum built around preserved dinosaur tracks with interactive exhibits."
+  },
+  {
+    "name": "Historic Downtown St. George",
+    "image": "downtown.webp",
+    "address": "Main St, St. George, UT 84770",
+    "description": "Shops, restaurants, murals, and galleries in the charming historic downtown district."
+  }
+]

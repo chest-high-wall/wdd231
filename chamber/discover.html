@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discover St. George</title>
+  <meta name="description" content="Discover the highlights of St. George, Utah.">
+  <meta name="author" content="Tyler Andrew">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/larger.css">
+  <script src="js/discover.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>My Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html" aria-current="page">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="discover-layout">
+    <aside id="visit-message" class="sidebar">Loading visit info...</aside>
+
+    <section id="discover-cards" class="grid-area">
+      <h2>Discover Local Highlights</h2>
+      <!-- Cards will be dynamically injected here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Tyler Andrew | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@media (min-width: 641px) {
+  #discover-layout {
+    display: grid;
+    grid-template-areas: "sidebar cards";
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  #visit-message {
+    grid-area: sidebar;
+    background-color: #e9f5ff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    text-align: left;
+  }
+
+  #discover-cards {
+    grid-area: cards;
+  }
+
+  /* Hover effect for images */
+  #discover-cards img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  #discover-cards img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+}
+
+
