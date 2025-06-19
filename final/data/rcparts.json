@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Aluminum Steering Linkage Set",
+    "type": "Steering",
+    "description": "Upgrades plastic steering arms to aluminum for better durability and response.",
+    "price": "$19.99",
+    "image": "images/rc1.webp"
+  },
+  {
+    "name": "Brass Diff Covers",
+    "type": "Weight",
+    "description": "Adds front-end weight for better crawling traction and axle protection.",
+    "price": "$15.49",
+    "image": "images/rc2.webp"
+  },
+  {
+    "name": "Oil-Filled Shocks (Adjustable)",
+    "type": "Suspension",
+    "description": "Improves suspension dampening and control on rocky terrain.",
+    "price": "$24.95",
+    "image": "images/rc3.webp"
+  },
+  {
+    "name": "Tires",
+    "type": "Tires",
+    "description": "High-traction crawler tires for superior grip on rocky terrain.",
+    "price": "$18.94",
+    "image": "images/rc4.webp"
+  },
+  {
+    "name": "Beadlock Wheels",
+    "type": "Beadlock Wheels",
+    "description": "Secure your tires with style and strength using beadlock wheels.",
+    "price": "$20.80",
+    "image": "images/rc5.webp"
+  },
+  {
+    "name": "LED Light Kit",
+    "type": "LED Light Kit",
+    "description": "Illuminate your crawler’s path for nighttime rock crawling adventures.",
+    "price": "$19.64",
+    "image": "images/rc6.webp"
+  },
+  {
+    "name": "Brass Portal Hubs",
+    "type": "Brass Portal Hubs",
+    "description": "Add lower center gravity weight for improved climbing balance.",
+    "price": "$17.47",
+    "image": "images/rc7.webp"
+  },
+  {
+    "name": "Steel Driveshafts",
+    "type": "Steel Driveshafts",
+    "description": "Reinforced driveshafts to handle extreme torque and performance.",
+    "price": "$17.91",
+    "image": "images/rc8.webp"
+  },
+  {
+    "name": "Upgraded Servo",
+    "type": "Upgraded Servo",
+    "description": "Powerful servo for quicker and more precise steering response.",
+    "price": "$14.94",
+    "image": "images/rc9.webp"
+  },
+  {
+    "name": "Metal Gear Transmission",
+    "type": "Metal Gear Transmission",
+    "description": "All-metal gears for durability under load and extended runtime.",
+    "price": "$21.97",
+    "image": "images/rc10.webp"
+  },
+  {
+    "name": "Chassis Brace Kit",
+    "type": "Chassis Brace Kit",
+    "description": "Reinforce the crawler frame for rigidity and stability.",
+    "price": "$16.33",
+    "image": "images/rc11.webp"
+  },
+  {
+    "name": "Skid Plate Set",
+    "type": "Skid Plate Set",
+    "description": "Protect your rig’s underside from rocks and debris.",
+    "price": "$14.67",
+    "image": "images/rc12.webp"
+  },
+  {
+    "name": "Aluminum Shock Towers",
+    "type": "Aluminum Shock Towers",
+    "description": "Enhance suspension tuning and chassis strength.",
+    "price": "$13.09",
+    "image": "images/rc13.webp"
+  },
+  {
+    "name": "Waterproof ESC",
+    "type": "Waterproof ESC",
+    "description": "Run through water and mud without worry with this waterproof ESC.",
+    "price": "$26.79",
+    "image": "images/rc14.webp"
+  },
+  {
+    "name": "CNC Steering Knuckles",
+    "type": "CNC Steering Knuckles",
+    "description": "Precision-machined knuckles for smoother, stronger steering geometry.",
+    "price": "$16.62",
+    "image": "images/rc15.webp"
+  }
+]

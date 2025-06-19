@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thank you confirmation page for RC Rock Crawler contact form." />
+  <meta name="author" content="Tyler Andrew" />
+  <title>Thank You | RC Rock Crawlers</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+<body>
+
+  <header>
+    <h1>Thank You!</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="upgrades.html">Upgrades</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-form">
+      <h2>Your message has been received!</h2>
+      <p>Thanks for reaching out. We'll get back to you as soon as possible.</p>
+      <a href="index.html" style="display:inline-block;margin-top:1rem;text-decoration:underline;color:#2a5d3b;">Return to Home</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> RC Crawler Central | Tyler Andrew</p>
+    <p><a href="attribution.html">Attributions</a> | <a href="https://www.loom.com/share/88d511f9317e4408a4a6ea3f6803cd68?sid=263a8073-7b73-4495-9a18-09d6186b6cdc" target="_blank">Demo Video</a></p>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

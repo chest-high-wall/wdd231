@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Upgrades and modifications for RC crawlers including suspension, wheels, and performance mods." />
+  <meta name="author" content="Tyler Andrew" />
+  <meta property="og:title" content="RC Crawler Upgrades" />
+  <meta property="og:description" content="Discover the best upgrades for your RC rock crawler." />
+  <meta property="og:image" content="images/rc1.webp" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.ico" />
+  <title>RC Upgrades | RC Rock Crawlers</title>
+</head>
+<body>
+
+  <header>
+    <h1>RC Crawler Upgrades</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="upgrades.html" class="active">Upgrades</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Top RC Rock Crawler Upgrades</h2>
+      <p>Explore some of the most effective upgrades for enhancing the performance and durability of your RC crawler builds.</p>
+      <p id="view-count">You've viewed 0 parts.</p>
+    </section>
+
+    <section class="upgrade-grid" id="upgrades-grid">
+      <!-- Dynamic RC parts will be injected here by upgrades.js -->
+    </section>
+  </main>
+
+  <!-- Modal Structure -->
+  <div id="part-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modal-img" src="" alt="" />
+      <h2 id="modal-title"></h2>
+      <p id="modal-type"></p>
+      <p id="modal-material"></p>
+      <p id="modal-weight"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> RC Crawler Central | Tyler Andrew</p>
+    <p><a href="attribution.html">Attributions</a> | <a href="https://www.loom.com/share/88d511f9317e4408a4a6ea3f6803cd68?sid=263a8073-7b73-4495-9a18-09d6186b6cdc" target="_blank">Demo Video</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/upgrades.js" type="module"></script>
+  <script>
+    // Set footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

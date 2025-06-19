@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore RC rock crawling with upgrade tips, gear recommendations, and the latest parts." />
+  <meta name="author" content="Tyler Andrew" />
+  <meta property="og:title" content="RC Rock Crawlers | Custom Builds" />
+  <meta property="og:description" content="Your hub for RC crawler upgrades and gear." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/final/index.html" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <title>RC Rock Crawlers | Home</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script defer type="module" src="scripts/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">RC Rock Crawlers</div>
+    <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="upgrades.html">Upgrades</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero home-hero">
+      <div class="hero-text">
+        <h1>Built to Crawl</h1>
+        <p>Discover the best upgrades, gear, and custom mods for your RC rock crawler rig. Built by hobbyists, for hobbyists.</p>
+        <a href="upgrades.html" class="cta">Explore Upgrades</a>
+      </div>
+    </section>
+
+    <section class="features-grid">
+      <h2>What You'll Find</h2>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <p class="emoji">✅</p>
+          <h3>Upgrade Guides</h3>
+          <p>Trusted walkthroughs to install and tune your parts with confidence.</p>
+        </div>
+        <div class="feature-card">
+          <p class="emoji">📦</p>
+          <h3>Part Reviews</h3>
+          <p>See what works best for weight balance and rugged terrain performance.</p>
+        </div>
+        <div class="feature-card">
+          <p class="emoji">📈</p>
+          <h3>Performance Logs</h3>
+          <p>Data-backed test results and logs to guide your next build.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <footer>
+    <p>&copy; <span id="year"></span> RC Crawler Central | Tyler Andrew</p>
+    <p><a href="attribution.html">Attributions</a> | <a href="https://www.loom.com/share/88d511f9317e4408a4a6ea3f6803cd68?sid=263a8073-7b73-4495-9a18-09d6186b6cdc" target="_blank">Demo Video</a></p>
+  </footer>
+
+  <!-- Scripts -->
+ <script defer type="module" src="scripts/main.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+</body>
+</html>

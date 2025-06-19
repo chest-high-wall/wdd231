@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact RC Crawler Central for upgrade questions or suggestions." />
+  <meta name="author" content="Tyler Andrew" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.ico" />
+  <title>Contact Us | RC Rock Crawlers</title>
+</head>
+<body>
+
+  <header>
+    <h1>RC Crawler Upgrades</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="upgrades.html">Upgrades</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to share your favorite upgrades? Fill out the form below!</p>
+    </section>
+
+    <form action="thankyou.html" method="get" class="contact-form">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> RC Crawler Central | Tyler Andrew</p>
+    <p><a href="attribution.html">Attributions</a> | <a href="https://www.loom.com/share/88d511f9317e4408a4a6ea3f6803cd68?sid=263a8073-7b73-4495-9a18-09d6186b6cdc" target="_blank">Demo Video</a></p>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+
